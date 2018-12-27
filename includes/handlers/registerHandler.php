@@ -11,7 +11,7 @@
         return $inputText;
     }
     if(isset($_POST['registerButton'])){
-        echo "register button pressed!";
+        //echo "register button pressed!";
         $username = sanitizeFormString($_POST['registerUsername']);
         $password = sanitizeFormPassword($_POST['registerPassword']);
         $confirmPassword = sanitizeFormPassword($_POST['confirmPassword']);
