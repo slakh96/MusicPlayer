@@ -20,7 +20,7 @@ class Account {
         }
         else{
             //echo "Registration not completed...error";
-            array_push($this->errorArray, Constants::$signupError);//double colon for statics
+            array_push($this->errorArray, Constants::$signupError);//double colon for statics, since referring to class name
             return false;
         }
     }
