@@ -28,7 +28,6 @@ class Account {
             echo "If statement, no error";
             $error = "";
         }
-        //echo "Error exists";
         return "<span style='color: red' class='errorMessage'>$error</span>";
     }
     private function validatePasswords($p1, $p2){
