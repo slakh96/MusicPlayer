@@ -5,7 +5,7 @@
     include("includes/config.php");
     include("includes/classes/Account.php");
     include("includes/classes/Constants.php");
-    $account = new Account();
+    $account = new Account($con); //mysqli_connect("localhost", "root", "", "musicPlayer");
     include("includes/handlers/registerHandler.php");
     include("includes/handlers/loginHandler.php");
 
