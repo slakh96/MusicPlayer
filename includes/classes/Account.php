@@ -15,6 +15,10 @@ class Account {
             $pos = array_search(Constants::$signupError, $this->errorArray);
             unset($this->errorArray[$pos]);
         }
+        if(in_array(Constants::$usernameExistsError, $this->errorArray)){
+            $pos = array_search(Constants::$usernameExistsError, $this->errorArray);
+            unset($this->errorArray[$pos]);
+        }
         if($this->validatePasswords($password, $confirmPassword) and $this->validateUsername($username)){
             echo "Good!";
             $this->activated = true;
@@ -45,8 +49,15 @@ class Account {
         return $p1 == $p2 and strlen($p1) > 7;
     }
     private function validateUsername($u){
-        return strlen($u) > 0 and strlen($u) < 26;
-        //TODO: Check if username exists already!
+        if (strlen($u) <= 0 || strlen($u) >= 26){
+            return false;
+        }
+        $checkUsernameQuery = mysqli_query($this->con, "SELECT username FROM users WHERE username='$u'");//finds if matching usernames
+        if(mysqli_num_rows($checkUsernameQuery) != 0){
+            array_push($this->errorArray, Constants::$usernameExistsError);
+            return false;
+        }
+        return true;
     }
     
 }

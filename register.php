@@ -43,7 +43,8 @@
                 <input id="confirmPassword" name="confirmPassword" type="password" placeholder="Confirm Password" required><br>
                 <button type="submit" name="registerButton">Register</button>
                  <?php
-                    echo $account->checkForError("Username must be at most 25 chars! Passwords must be at least 7 chars and match!");
+                    echo $account->checkForError(Constants::$signupError);
+                    echo $account->checkForError(Constants::$usernameExistsError);
                  ?>
             </form>
         </div>
