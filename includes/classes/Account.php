@@ -11,14 +11,6 @@ class Account {
         $this->con = $con;
     }
     public function register($username, $password, $confirmPassword){
-        if(in_array(Constants::$signupError, $this->errorArray)){
-            $pos = array_search(Constants::$signupError, $this->errorArray);
-            unset($this->errorArray[$pos]);
-        }
-        if(in_array(Constants::$usernameExistsError, $this->errorArray)){
-            $pos = array_search(Constants::$usernameExistsError, $this->errorArray);
-            unset($this->errorArray[$pos]);
-        }
         if($this->validatePasswords($password, $confirmPassword) and $this->validateUsername($username)){
             echo "Good!";
             $this->activated = true;
@@ -34,6 +26,10 @@ class Account {
             echo "If statement, no error";
             $error = "";
         }
+        if(in_array($error, $this->errorArray)){
+            $pos = array_search($error, $this->errorArray);
+            unset($this->errorArray[$pos]);
+        }//removes the error, so doesn't get left over in the error array.
         return "<span style='color: red' class='errorMessage'>$error</span>";
     }
     private function insertUserDetails($un, $pw){
@@ -58,6 +54,16 @@ class Account {
             return false;
         }
         return true;
+    }
+    public function login($un, $pw){
+        $pw = md5($pw);//Encrypt password
+        
+        $query = mysqli_query($this->con, "SELECT * FROM users WHERE username = '$un' AND password='$pw'");
+        if(mysqli_num_rows($query) == 1){
+            return true;
+        }
+        array_push($this->errorArray, Constants::$loginFailedError);
+        return false;
     }
     
 }

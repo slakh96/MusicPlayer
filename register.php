@@ -31,6 +31,9 @@
                 <label for="loginPassword">Password</label>
                 <input id="loginPassword" name="loginPassword" type="password" placeholder="Password" required><br>
                 <button type="submit" name="loginButton">Log in</button>
+                <?php
+                    echo $account->checkForError(Constants::$loginFailedError);
+                 ?>
             </form>
             <h2>Or...</h2>
              <form id= "registerForm" action="register.php" method="post">
