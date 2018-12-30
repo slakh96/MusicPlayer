@@ -1,0 +1,126 @@
+
+html, body {
+    background-image: url(../images/login-bg.jpg.jpg);
+    background-size: cover;
+    background-position: 50% 30%;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    display: table;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+/*Login & Register Styles-------------------------------------*/
+.loginContainer {
+    top:auto;
+    bottom: auto;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    color: bisque;
+    line-height: 120%;
+}
+.loginContainer h2{
+    font-size: 120%;
+    text-align: center;
+}
+.loginContainer input{
+    display: block;
+    background-color: rgba(255,255,255,0);
+    border: 0px;
+    border-bottom: 1px solid bisque;
+    font-family: inherit;
+    color: white;
+    width: 100%;
+    line-height: 150%;
+}
+.loginContainer input:focus{
+    outline: none;
+    box-shadow: 0 0 10px bisque;
+}
+.loginContainer label{
+    font-size: 75%;
+    padding-bottom: 20px;
+}
+#registerForm{
+    display: none;
+}
+#loginForm{
+    display: none;
+}
+/*Buttons------------------------------------------------------------------*/
+button {
+    display: block;
+    background-color: rgba(255,255,255,0);
+    height: 2em;/*em means font size, thus 3em means three times the font size*/
+    color: bisque;
+    border: 1.5px solid bisque;
+    border-radius: 256px; /*Random large amount to make 100% curving on the sides and none on top or bottom*/
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: inherit;
+    text-align: center;
+    font-size: 90%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+button:hover{
+    background-color: bisque;
+    color: rgba(20,20,20,1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*-------------------------------------------------------------------------*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: bisque;
+  opacity: 0.4; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: bisque;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: bisque;
+}
+.ls-toggle{/*Text align must be on the containing div*/
+    text-align: center;
+}
+.ls-toggle a{
+    font-size: 65%;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: bisque;
+}
+/*Vertically centering an image. From https://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers*/
+.outer {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: none;
+  width: inherit;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/*
+.inner {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  whatever width you want
+}*/
