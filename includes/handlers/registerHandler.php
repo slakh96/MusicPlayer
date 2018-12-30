@@ -17,9 +17,13 @@
         $confirmPassword = sanitizeFormPassword($_POST['confirmPassword']);
         $registered = $account->register($username, $password, $confirmPassword);//account accessible since all this code imports to register.php, where account var is defined
         if($registered){
+            $_SESSION['userLoggedIn'] = $username;
             header("Location: index.php");
         }
-        unset($_POST['registerButton']);
+        else{
+            unset($_SESSION['userLoggedIn']);
+        }
+        //unset($_POST['registerButton']);
         
     }
 ?>
