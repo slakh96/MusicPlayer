@@ -16,21 +16,21 @@ class Account {
             $this->activated = true;
             return $this->insertUserDetails($username, $password);
         }
-        else{
+        else if(!in_array(Constants::$usernameExistsError, $this->errorArray)){
             array_push($this->errorArray, Constants::$signupError);//double colon for statics, since referring to class name
             return false;
         }
     }
     public function checkForError($error){
         if(!in_array($error, $this->errorArray)){
-            echo "If statement, no error";
+            //echo "If statement, no error";
             $error = "";
         }
         if(in_array($error, $this->errorArray)){
             $pos = array_search($error, $this->errorArray);
             unset($this->errorArray[$pos]);
         }//removes the error, so doesn't get left over in the error array.
-        return "<span style='color: red' class='errorMessage'>$error</span>";
+        return "<span style='color: red; font-size:60%;' class='errorMessage'>$error</span>";
     }
     private function insertUserDetails($un, $pw){
         $encryptedPw = md5($pw); //gives encrypted version of password
