@@ -15,6 +15,7 @@
         <title>Welcome!</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/app.css">
     </head>
     <body>    
        <div class="nowPlayingBarContainer">

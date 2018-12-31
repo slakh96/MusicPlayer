@@ -9,3 +9,51 @@ html, body {
     height: 100%;
     width: 100%;
 }
+/*Buttons------------------------------------------------------------------*/
+button {
+    display: block;
+    background-color: rgba(255,255,255,0);
+    height: 2em;/*em means font size, thus 3em means three times the font size*/
+    color: bisque;
+    border: 1.5px solid bisque;
+    border-radius: 256px; /*Random large amount to make 100% curving on the sides and none on top or bottom*/
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    width: 100%;
+    font-family: inherit;
+    text-align: center;
+    font-size: 90%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+button:hover{
+    background-color: bisque;
+    color: rgba(20,20,20,1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*Vertically centering data. From https://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers*/
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: inherit;
+    height: 100%;
+    background-color: none;
+    width: inherit;
+}
+
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+/*
+.inner {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  whatever width you want
+}*/
