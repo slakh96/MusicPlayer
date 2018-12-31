@@ -89,8 +89,23 @@
                 </div>
             </div>
             <div class="col span-2-of-3">
-                Testing123
+            <div class="adContainer">
+            <div class="outer">
+            <div class="middle">
+                <h1>Find Awesome Music and quality artists.</h1>
+                <h2>Listen to nonstop music, completely free.</h2>
+                <ul>
+                    <li>Discover upcoming artists and stalwarts of yesterday.</li>
+                    <li>Create and save your own playlists.</li>
+                    <li>Follow artists and other users to keep up to date on the newest music.</li>
+                </ul>
+            </div>
+            </div>
+            </div>
             </div>
         </div>
+        <footer>
+            <a href="https://icons8.com/color-icons">Flat color icons by Icons8</a>
+        </footer>
     </body>
 </html>

@@ -1,6 +1,7 @@
 
 html, body {
-    background-image: url(../images/login-bg.jpg.jpg);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), rgba(0,0,0,0.8)), url(../images/login-bg.jpg.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: 50% 30%;
     font-family: "Lato", "Arial", sans-serif;
@@ -24,6 +25,7 @@ html, body {
     padding-right: 10%;
     color: bisque;
     line-height: 120%;
+    border-right: 1px solid bisque;
 }
 .loginContainer h2{
     font-size: 120%;
@@ -53,6 +55,49 @@ html, body {
 #loginForm{
     display: none;
 }
+/*More form specific stuff-------------------------------------------------------------------------*/
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: bisque;
+  opacity: 0.4; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: bisque;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: bisque;
+}
+.ls-toggle{/*Text align must be on the containing div*/
+    text-align: center;
+}
+.ls-toggle a{
+    font-size: 65%;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: bisque;
+}
+/*Ad container----------------------------------------------------------------------------------------------------------------*/
+.adContainer{
+    width: inherit;
+    line-height: 155%;
+}
+.adContainer h1{
+    line-height: normal;
+    font-size: 300%;
+    color: chartreuse;
+}
+.adContainer h2{
+    color:aquamarine;
+    margin: 35px 0;
+}
+.adContainer ul{
+    color: #00ff80;
+    list-style-image: url(../images/icons/check_icon_00ff80.png);
+}
+.adContainer li{
+    padding: 5px 0;
+}
 /*Buttons------------------------------------------------------------------*/
 button {
     display: block;
@@ -78,44 +123,21 @@ button:hover{
     color: rgba(20,20,20,1);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-/*-------------------------------------------------------------------------*/
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: bisque;
-  opacity: 0.4; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: bisque;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: bisque;
-}
-.ls-toggle{/*Text align must be on the containing div*/
-    text-align: center;
-}
-.ls-toggle a{
-    font-size: 65%;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: bisque;
-}
-/*Vertically centering an image. From https://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers*/
+/*Vertically centering data. From https://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers*/
 .outer {
-  display: table;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: none;
-  width: inherit;
+    display: table;
+    position: absolute;
+    top: 0;
+    left: inherit;
+    height: 100%;
+    background-color: none;
+    width: inherit;
 }
 
 .middle {
   display: table-cell;
   vertical-align: middle;
 }
-
 /*
 .inner {
 
@@ -124,3 +146,15 @@ button:hover{
   width: 400px;
   whatever width you want
 }*/
+/*Footer------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    font-size: 60%;
+    font-weight: 300;
+}
+footer a{
+    color: bisque;
+}
