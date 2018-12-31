@@ -1,2 +1,2 @@
 # MusicPlayer
-A music player, created using PHP, JavaScript, HTML, and CSS.
+A music player, created using PHP, mySQL, JavaScript, HTML, and CSS.
