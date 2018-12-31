@@ -23,7 +23,7 @@
         </title>
         <link rel="stylesheet" type="text/css" href="assets/css/register.css">
         <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+        <!--<link rel="stylesheet" type="text/css" href="assets/css/animate.css">-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="assets/js/register.js"></script>
     </head>

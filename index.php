@@ -12,9 +12,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Slotify!</title>
+        <title>Welcome!</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
     </head>
-    <body>
-        Hello World!
+    <body>    
+       <div class="nowPlayingBarContainer">
+            <div class="nowPlayingBar">
+                <div class="nowPlayingLeft">
+                    
+                </div>
+                <div class="nowPlayingCenter">
+                    <div class="content playerControls">
+                        <div class="buttons">
+                            <button>Hellow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="nowPlayingRight">
+                    
+                </div>
+            </div>
+        </div>
     </body>
 </html>

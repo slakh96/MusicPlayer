@@ -1,0 +1,47 @@
+body {
+    margin: 0 0;
+    padding: 0 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.nowPlayingBarContainer{
+    width: 100%;
+    background-color: darkslategray;
+    bottom: 0;
+    position: fixed;
+    min-width: 600px;
+}
+.nowPlayingBar{
+    display: flex; /*Flexible attribute, makes it change able to different sizes*/
+    height: 90px;
+    padding: 16px;
+    box-sizing: border-box;/*Make it 90px including 16px padding*/
+}
+.nowPlayingLeft, .nowPlayingRight{
+    width: 30%;
+    min-width:200px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    
+}
+.nowPlayingRight{
+    align-items: right;
+}
+.nowPlayingCenter{
+    width: 40%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+.nowPlayingBar .content{
+    width: 100%;
+}
