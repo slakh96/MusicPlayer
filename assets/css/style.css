@@ -24,6 +24,8 @@ body {
 }
 .nowPlayingRight{
     align-items: right;
+    margin-top: 24px;
+    position: relative;
 }
 .nowPlayingCenter{
     width: 40%;
@@ -114,3 +116,14 @@ body {
 .trackInfo .trackArtist {
     font-size: 60%;
 }
+/*Volume styling---------------------------------------------------------------------------------------------------------------------------*/
+.volumeBar {
+    position: absolute;
+    right: 0;
+    width: 180px;
+}
+.volumeBar .progressBar {
+    width: 120px;
+}
+
+

@@ -44,7 +44,7 @@
                             
                             <button class="controlButton rewind" title="rewind" alt="rewind"><img src="assets/images/icons/icons8_Rewind_25px.png"></button>
                             
-                            <button class="controlButton play" title="Play" alt="Play"><img src="assets/images/icons/icons8_Circled_Play_25px_1.png"></button>
+                            <button class="controlButton play" title="Play" alt="Play"><img src="assets/images/icons/icons8_Circled_Play_50px.png"></button>
                             
                             <button class="controlButton pause" title="Pause" alt="Pause" style="display:none"><img src="assets/images/icons/icons8_Pause_Button_25px_1.png"></button>
                             
@@ -59,14 +59,24 @@
                                 <div class="progressBarBackground">
                                     <div class="progress"></div>
                                 </div>
-                                
                             </div>
                             <span class = "progressTime remaining">0.00</span>
                         </div>
                     </div>
                 </div>
                 <div class="nowPlayingRight">
-                    
+                    <div class="volumeBar">
+                        <button class="controlButton volume" title="volume">
+                            <img src="assets/images/icons/icons8_Speaker_25px.png" title="volume" alt="volume">
+                            <img src="assets/images/icons/icons8_No_Audio_25px.png" title="mute" alt="mute" style="display:none">
+                        </button>
+                        <div class="progressBar">
+                            <div class="progressBarBackground">
+                                <div class="progress"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
