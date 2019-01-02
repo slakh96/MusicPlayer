@@ -80,3 +80,14 @@ footer{
 footer a{
     color: bisque;
 }
+button {
+    width: 100%;
+    border: 1.5px solid bisque;
+    border-radius: 256px; /*Random large amount to make 100% curving on the sides and none on top or bottom*/
+    transition-duration: 0.6s;
+}
+button:hover{
+    background-color: bisque;
+    color: rgba(20,20,20,1);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
