@@ -21,6 +21,20 @@
        <div class="nowPlayingBarContainer">
             <div class="nowPlayingBar">
                 <div class="nowPlayingLeft">
+                    <div class="content">
+                        <span class="albumLink">
+                            <img class="albumArt" src="assets/images/album-art-sonu.jpg">
+                        </span>
+                        <div class="trackInfo">
+                            <span class="trackName">
+                                <span>Sapna Jahan</span>
+                            </span>
+                            <span class="trackArtist">
+                                <span>Sonu Nigam</span>
+                            </span>
+                        </div>
+                        
+                    </div>
                     
                 </div>
                 <div class="nowPlayingCenter">

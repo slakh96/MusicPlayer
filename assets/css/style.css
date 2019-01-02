@@ -35,6 +35,7 @@ body {
 }
 .nowPlayingBar .content{
     width: 100%;
+    height: 57px;
 }
 /*Player bar buttons---------------------------------------------------------------------------------------------------------------------*/
 .playerControls .buttons {/*Wrapper class for all buttons*/
@@ -90,4 +91,26 @@ body {
 }
 .playbackBar .progressBar{
     margin-top: 3px;
+}
+/*Album Art Stuff, left side---------------------------------------------------------------------------------------------------------------*/
+.albumArt {
+    height: 100%;
+    width: auto;
+    max-width: 55px;
+    margin-right: 15px;
+    float: left;
+    background-size: cover;
+}
+.trackInfo {
+    color: bisque;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: table;
+    margin: 6px 0;
+}
+.trackInfo .trackName, .trackInfo .trackArtist{
+    display: inline-block;
+    width: 100%;
+}
+.trackInfo .trackArtist {
+    font-size: 60%;
 }
