@@ -127,3 +127,47 @@ body {
 }
 
 
+
+.topContainer {
+    min-height: 100%;
+    width:100%;
+}
+
+.navContainer {
+    background-color: darkslategray;
+    width: 220px;
+    height: 100vh; /*100 percent of available view height*/
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navBar {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.logo img {
+    width: 35px;
+    
+}
+
+.navItemLink {
+    text-decoration: none;
+    padding: 10px 0
+    colour: bisque;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 90%;
+}
+.navItemLink {
+    color: bisque;
+}
+
+.group {
+    border-top: 1px solid white;
+    padding: 10px 0;
+}

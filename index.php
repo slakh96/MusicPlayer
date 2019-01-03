@@ -17,8 +17,34 @@
         <link rel="stylesheet" type="text/css" href="assets/css/grid.css">
         <link rel="stylesheet" type="text/css" href="assets/css/app.css">
     </head>
-    <body>    
-       <div class="nowPlayingBarContainer">
+    <body>
+        <div class="mainContainer"><!---Houses all stuff---->
+            
+            <div class="topContainer"><!--Houses all stuff except now playing bar--->
+                <div class="navContainer"><!---Left bar nav---->
+                    <nav class="navBar">
+                        <a href="index.php" class="logo"><img src="assets/images/icons/icons8_Snowflake_75px.png"></a>
+                        <div class="group"><!--Search bar--->
+                            <div class="navItem">
+                                <a href="search.php" class="navItemLink">Search</a>
+                            </div>
+                        </div>
+                        <div class="group"><!---Quick links--->
+                            <div class="navItem">
+                                <a href="#" class="navItemLink">Browse</a>
+                            </div>
+                            <div class="navItem">
+                                <a href="#" class="navItemLink">My Music</a>
+                            </div>
+                            <div class="navItem">
+                                <a href="#" class="navItemLink">My Profile</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            
+            <div class="nowPlayingBarContainer">
             <div class="nowPlayingBar">
                 <div class="nowPlayingLeft">
                     <div class="content">
@@ -79,6 +105,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>
