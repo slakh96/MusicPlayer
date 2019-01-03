@@ -131,6 +131,7 @@ body {
 .topContainer {
     min-height: 100%;
     width:100%;
+    background-color: #568f8f;
 }
 
 .navContainer {
@@ -190,3 +191,5 @@ body {
 .navItem {
     position: relative;
 }
+
+

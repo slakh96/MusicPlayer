@@ -43,6 +43,9 @@
                         </div>
                     </nav>
                 </div>
+                <div class="mainView">
+                
+                </div>
             </div>
             
             <div class="nowPlayingBarContainer">
