@@ -156,18 +156,37 @@ body {
 
 .navItemLink {
     text-decoration: none;
-    padding: 10px 0
-    colour: bisque;
+    padding: 13px 0;
+    color: bisque;
     display: block;
     letter-spacing: 1px;
     font-weight: 700;
     font-size: 90%;
 }
-.navItemLink {
-    color: bisque;
+.navItemLink:hover{
+    color: white;
 }
+.navItemLink:active{
+    color: aquamarine;
+}
+
 
 .group {
     border-top: 1px solid white;
     padding: 10px 0;
+}
+
+.logo {
+    padding-bottom: 8px;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 25px;
+}
+
+.navItem {
+    position: relative;
 }

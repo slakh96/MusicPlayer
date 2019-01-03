@@ -26,7 +26,8 @@
                         <a href="index.php" class="logo"><img src="assets/images/icons/icons8_Snowflake_75px.png"></a>
                         <div class="group"><!--Search bar--->
                             <div class="navItem">
-                                <a href="search.php" class="navItemLink">Search</a>
+                                <a href="search.php" class="navItemLink">Search
+                                <img src="assets/images/icons/icons8_Circled_Play_50px.png" class="icon" alt="search" ></a>
                             </div>
                         </div>
                         <div class="group"><!---Quick links--->
